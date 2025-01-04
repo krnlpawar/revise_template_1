@@ -137,7 +137,7 @@ export default function Footer() {
         </div>
         <div className="footer-credit d-flex j-between">
           <div className="credit-left">
-            Copyright © { new Date().getFullYear() } - All Rights Reserved
+            Copyright © {new Date().getFullYear()} - All Rights Reserved
           </div>
         </div>
       </div>
