@@ -15,36 +15,17 @@ export default function Portfolio() {
 		</div>
 	  </div>
 	  <div className="portfolio-item">
-		<div className="single-portfolio">
-		  <a href="#" className="img-icon">
-			<img src="img/480x300.png" alt=""
-		  /></a>
-		</div>
-		<div className="single-portfolio">
-		  <a href="#" className="img-icon">
-			<img src="img/480x300.png" alt=""
-		  /></a>
-		</div>
-		<div className="single-portfolio">
-		  <a href="#" className="img-icon">
-			<img src="img/480x300.png" alt=""
-		  /></a>
-		</div>
-		<div className="single-portfolio">
-		  <a href="#" className="img-icon">
-			<img src="img/480x300.png" alt=""
-		  /></a>
-		</div>
-		<div className="single-portfolio">
-		  <a href="#" className="img-icon">
-			<img src="img/480x300.png" alt=""
-		  /></a>
-		</div>
-		<div className="single-portfolio">
-		  <a href="#" className="img-icon">
-			<img src="img/480x300.png" alt=""
-		  /></a>
-		</div>
+		{
+			Array(6).fill(0).map((item, index) => {
+				return (
+					<div className="single-portfolio" key={index}>
+					  <a href="#" className="img-icon">
+						<img src="img/480x300.png" alt=""
+					  /></a>
+					</div>
+				)
+			})
+		}
 	  </div>
 	</div>
   </section>
